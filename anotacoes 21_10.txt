@@ -1,0 +1,18 @@
+toda vez que for abri uma sessão usar o session_start()
+
+
+e depois jogar a variavel na superglobal $_SESSION [(chave)]-> com a chave = varivel que recebe a informação do usuario
+
+
+formas de eliminar a sessão -> session_destroy() - elimina toda a sessão
+                               session_unset() - elimina todas as váriaveis de sessão mas, mantem a sessão ativa
+
+
+Podemos recuperar a sessão através do -> session_id()
+
+
+
+--------------------------------------------------------------------ANOTAÇÕES----------------------------------------------------------------
+Corrigir a data -> date_default_timezone_set("America/Sao_Paulo");
+
+
