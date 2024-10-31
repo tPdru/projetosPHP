@@ -6,6 +6,10 @@
 	<title>Cadástro</title>
 </head>
 <body>
+	<?php session_start();
+	
+	 ?>
+
 	<form name="cadastrar" method="post" action="tela_guarda.php">
 
 		Nome: <input type="text" name="nome"> <br><br>
@@ -16,9 +20,15 @@
 
 		Altura: <input type="text" name="altura"> <br><br>
 
-		<input type="submit" name="enviar" value="Cadastrar">
 
+
+		<input type="submit" name="enviar" value="Cadastrar" >
+
+		<input type="submit" name="comparar" value="Comparar" >		
 	</form>
+
+
+
 
 </body>
 </html>
