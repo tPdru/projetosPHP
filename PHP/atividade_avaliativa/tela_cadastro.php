@@ -7,7 +7,11 @@
 </head>
 <body>
 	<?php session_start();
-	
+		$index = 0;
+		//$index = $_SESSION['atualIndex'];
+
+		
+		$_SESSION['index'] = $index;
 	 ?>
 
 	<form name="cadastrar" method="post" action="tela_guarda.php">

@@ -10,7 +10,7 @@
 
 	<?php 
 	session_start();
-	echo "$list_nomes[0]";
+		echo $_SESSION[1]";
 
 
 	 ?>
