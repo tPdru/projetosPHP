@@ -11,14 +11,17 @@
 		
 
 
-		$id = $_SESSION['atualIndex'] += 1;
+		$id = $_SESSION['index'] ;
 		
-		$testen = "nome$id";
+		$idnome = "nome$id";
+		$ididade = "idade$id";
+		$idpeso = "peso$id";
+		$idaltura = "altura$id";
 		$_SESSION['comparar'] =$_POST['comparar'];
-		$_SESSION[$id] = $_POST['nome'];
-		$_SESSION['idade'] = $_POST['idade'];
-		$_SESSION['peso'] = $_POST['peso'];
-		$_SESSION['altura'] = $_POST['altura'];
+		$_SESSION[$idnome] = $_POST['nome'];
+		$_SESSION[$ididade] = $_POST['idade'];
+		$_SESSION[$idpeso] = $_POST['peso'];
+		$_SESSION[$idaltura] = $_POST['altura'];
 
 		
 
@@ -28,11 +31,13 @@
 		
 
 		if($comp != null){
-			echo "GD";
+			header("Location: tela_resposta.php");
+			exit();
 		}
 		else{
-			
-			header("Location: tela_cadastro.php");
+			$_SESSION['index'] = $_SESSION['index'] +1;
+
+			header("Location: tela_cadastro_dois.php");
 			exit();
 		}
 		

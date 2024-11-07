@@ -7,9 +7,8 @@
 </head>
 <body>
 	<?php session_start();
-		$index = 0;
+
 		
-		$_SESSION['index'] = $index;
 	 ?>
 
 	<form name="cadastrar" method="post" action="tela_guarda.php">
@@ -25,7 +24,8 @@
 
 
 		<input type="submit" name="enviar" value="Cadastrar" >
-	 		
+
+		<input type="submit" name="comparar" value="Comparar" >		
 	</form>
 
 
